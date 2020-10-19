@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Adding to shopping cart" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-18T23:04:24" hostname="miller-IP5" time="8.633">
+  <properties/>
+  <testcase name="Searching for a product and adding it to shopping cart" classname="Adding to shopping cart" time="8.633"/>
+  <system-out><![CDATA[
+Feature: Adding to shopping cart
+
+  Scenario: Searching for a product and adding it to shopping cart ?[90m# src/test/resources/features/search/add_product_to_the_cart.feature:3?[0m
+18:04:24.714 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Searching for a product and adding it to shopping cart(adding-to-shopping-cart;searching-for-a-product-and-adding-it-to-shopping-cart)
+-------------------------------------------------------------------
+18:04:24.894 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+18:04:24.894 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1muser?[0m?[32m wants to buy a product?[0m                              ?[90m# AddProductToTheCartStepDefinitions.roger_wants_to_buy_a_product(String)?[0m
+    ?[32mWhen ?[0m?[32mhe searches for ?[0m?[32m?[1m"t-shirts"?[0m?[32m and add it to the cart?[0m         ?[90m# AddProductToTheCartStepDefinitions.he_searches_for_and_add_it_to_the_cart(String)?[0m
+    ?[32mThen ?[0m?[32mthe shopping cart is not empty?[0m                            ?[90m# AddProductToTheCartStepDefinitions.the_shopping_cart_is_not_empty()?[0m
+]]></system-out>
+  <system-err><![CDATA[Oct 18, 2020 6:04:24 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 20581
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 18, 2020 6:04:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

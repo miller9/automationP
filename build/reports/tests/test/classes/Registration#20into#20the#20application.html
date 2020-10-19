@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Registration into the application</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Registration into the application</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Registration into the application</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.032s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Complete registration"></a>
+<h3 class="failures">Complete registration</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Could not find a matching constructor for class class starter.registration.FillingRegistration with parameters [otro_usuario@automation.com, 1, roger, waters, roger_pass, 2, true,  true, cra 10, calle 20, Montgomery, Alabama, 12345, United States, cero, 347-5683290, 696-5431278]
+	at net.thucydides.core.steps.StepFactory.argumentTypesFrom(StepFactory.java:269)
+	at net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:259)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:223)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:194)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:130)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at starter.registration.FillingRegistration.withCredentials(FillingRegistration.java:71)
+	at starter.stepdefinitions.RegistrationCompletedStepDefinitions.he_has_access_to_the_form(RegistrationCompletedStepDefinitions.java:38)
+	at ✽.he has access to the form(file:src/test/resources/features/registration/registration_completed.feature:5)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Complete registration</td>
+<td>0.032s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+Feature: Registration into the application
+
+  Scenario: Complete registration             ?[90m# src/test/resources/features/registration/registration_completed.feature:3?[0m
+18:04:24.677 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Complete registration(registration-into-the-application;complete-registration)
+-------------------------------------------------------------------
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1muser?[0m?[32m wants to complete registration?[0m ?[90m# RegistrationCompletedStepDefinitions.user_wants_to_complete_registration(String)?[0m
+    ?[31mWhen ?[0m?[31mhe has access to the form?[0m            ?[90m# RegistrationCompletedStepDefinitions.he_has_access_to_the_form()?[0m
+      ?[31mjava.lang.IllegalArgumentException: Could not find a matching constructor for class class starter.registration.FillingRegistration with parameters [otro_usuario@automation.com, 1, roger, waters, roger_pass, 2, true,  true, cra 10, calle 20, Montgomery, Alabama, 12345, United States, cero, 347-5683290, 696-5431278]
+	at net.thucydides.core.steps.StepFactory.argumentTypesFrom(StepFactory.java:269)
+	at net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:259)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:223)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:194)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:130)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at starter.registration.FillingRegistration.withCredentials(FillingRegistration.java:71)
+	at starter.stepdefinitions.RegistrationCompletedStepDefinitions.he_has_access_to_the_form(RegistrationCompletedStepDefinitions.java:38)
+	at ✽.he has access to the form(file:src/test/resources/features/registration/registration_completed.feature:5)
+?[0m
+    ?[36mThen ?[0m?[36mhe completes registration?[0m            ?[90m# RegistrationCompletedStepDefinitions.he_completes_registration()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.4.1</a> at Oct 18, 2020, 6:04:47 PM</p>
+</div>
+</div>
+</body>
+</html>

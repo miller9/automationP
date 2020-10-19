@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Failed login into the application" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-18T23:03:56" hostname="miller-IP5" time="10.545">
+  <properties/>
+  <testcase name="Failed login" classname="Failed login into the application" time="10.545"/>
+  <system-out><![CDATA[Feature: Failed login into the application
+
+  Scenario: Failed login                           ?[90m# src/test/resources/features/loginPage/login_failed.feature:3?[0m
+18:03:56.087 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Failed login(failed-login-into-the-application;failed-login)
+-------------------------------------------------------------------
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1muser?[0m?[32m hasn't an active account?[0m            ?[90m# LoginFailedStepDefinitions.user_hasn_t_an_active_account(String)?[0m
+18:03:56.708 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+18:03:56.708 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mWhen ?[0m?[32mhe sends his credentials?[0m                  ?[90m# LoginFailedStepDefinitions.he_sends_his_credentials()?[0m
+    ?[32mThen ?[0m?[32mhe should not have access to the platform?[0m ?[90m# LoginFailedStepDefinitions.he_should_not_have_access_to_the_platform()?[0m
+]]></system-out>
+  <system-err><![CDATA[Oct 18, 2020 6:03:56 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 7881
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 18, 2020 6:03:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

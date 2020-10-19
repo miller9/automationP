@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login into the application" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-10-18T23:04:06" hostname="miller-IP5" time="7.727">
+  <properties/>
+  <testcase name="Successfully login" classname="Login into the application" time="7.727">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;MY ACCOUNT&quot;&#10;     but: was &quot;AUTHENTICATION&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;MY ACCOUNT&quot;
+     but: was &quot;AUTHENTICATION&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at starter.stepdefinitions.LoginOkStepDefinitions.he_should_have_access_to_manage_his_account(LoginOkStepDefinitions.java:44)
+	at ✽.he should have access to manage his account(file:src/test/resources/features/loginPage/login_ok.feature:6)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+Feature: Login into the application
+
+  Scenario: Successfully login                       ?[90m# src/test/resources/features/loginPage/login_ok.feature:3?[0m
+18:04:06.770 [Test worker] INFO   - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Successfully login(login-into-the-application;successfully-login)
+-------------------------------------------------------------------
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1muser?[0m?[32m has an active account?[0m                 ?[90m# LoginOkStepDefinitions.user_has_an_active_account(String)?[0m
+18:04:06.965 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+18:04:06.965 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mWhen ?[0m?[32mhe sends his valid credentials?[0m              ?[90m# LoginOkStepDefinitions.he_sends_his_valid_credentials()?[0m
+    ?[31mThen ?[0m?[31mhe should have access to manage his account?[0m ?[90m# LoginOkStepDefinitions.he_should_have_access_to_manage_his_account()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expected: "MY ACCOUNT"
+     but: was "AUTHENTICATION"
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at starter.stepdefinitions.LoginOkStepDefinitions.he_should_have_access_to_manage_his_account(LoginOkStepDefinitions.java:44)
+	at ✽.he should have access to manage his account(file:src/test/resources/features/loginPage/login_ok.feature:6)
+?[0m
+]]></system-out>
+  <system-err><![CDATA[Oct 18, 2020 6:04:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 19033
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 18, 2020 6:04:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

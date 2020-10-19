@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="starter.CucumberTestSuite" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="Andromeda.local" time="0.0">
+<testsuite name="starter.CucumberTestSuite" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="miller-IP5" time="0.0">
   <properties/>
-  <system-out><![CDATA[19:34:15.787 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+  <system-out><![CDATA[18:03:55.961 [Test worker] INFO   - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -13,13 +13,18 @@
                                                                                      
  News and tutorials at http://www.serenity-bdd.info                                  
  Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
+ Learn Serenity BDD online at https://www.serenitydojo.net                           
 -------------------------------------------------------------------------------------
 
-19:34:15.795 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Search by keyword
-19:34:27.577 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+18:03:55.966 [Test worker] INFO   - Test Suite Started: Failed login into the application
+18:03:55.977 [Test worker] INFO   - Test Suite Started: Login into the application
+18:03:55.979 [Test worker] INFO   - Test Suite Started: Accessing registration page
+18:03:55.982 [Test worker] INFO   - Test Suite Started: Registration into the application
+18:03:55.984 [Test worker] INFO   - Test Suite Started: Adding to shopping cart
+18:03:55.986 [Test worker] INFO   - Test Suite Started: Search by keyword
+18:04:06.765 [Test worker] INFO   - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -27,19 +32,66 @@
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Searching for a term
+Failed login
 ----------------------------------------------------------------------------
-Feature: Search by keyword
+18:04:14.635 [Test worker] ERROR  - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-  Scenario: Searching for a term                                  ?[90m# src/test/resources/features/search/search_by_keyword.feature:3?[0m
-    ?[32mGiven ?[0m?[32m?[0m?[32m?[1mSergey?[0m?[32m is on the DuckDuckGo home page?[0m                   ?[90m# SearchOnDuckDuckGoStepDefinitions.on_the_DuckDuckGo_home_page(String)?[0m
-    ?[32mWhen ?[0m?[32mhe searches for ?[0m?[32m?[1m"cucumber"?[0m                               ?[90m# SearchOnDuckDuckGoStepDefinitions.search_for(String)?[0m
-    ?[32mThen ?[0m?[32mall the result titles should contain the word ?[0m?[32m?[1m"cucumber"?[0m ?[90m# SearchOnDuckDuckGoStepDefinitions.all_the_result_titles_should_contain_the_word(String)?[0m
+Successfully login
+--------------------------------------------------------------------------
+18:04:14.685 [Test worker] ERROR  -     Test failed at step: Then MY ACCOUNT should be 'MY ACCOUNT'
+18:04:14.686 [Test worker] ERROR  -     Expected: "MY ACCOUNT" but: was "AUTHENTICATION"
+18:04:24.673 [Test worker] ERROR  - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m11.855s
+Create an account
+--------------------------------------------------------------------------
+18:04:24.674 [Test worker] ERROR  -     Test failed at step: Then CREATE AN ACCOUNT should be 'CREATE AN ACCOUNT'
+18:04:24.674 [Test worker] ERROR  -     Expected: "CREATE AN ACCOUNT" but: was "AUTHENTICATION"
+18:04:24.710 [Test worker] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
 
+Complete registration
+---------------------------------------------------------------------
+18:04:24.711 [Test worker] ERROR  -     Test failed at step: When he has access to the form
+18:04:24.711 [Test worker] ERROR  -     Could not find a matching constructor for class class starter.registration.FillingRegistration with parameters [otro_usuario@automation.com, 1, roger, waters, roger_pass, 2, true,  true, cra 10, calle 20, Montgomery, Alabama, 12345, United States, cero, 347-5683290, 696-5431278]
+18:04:33.485 [Test worker] INFO   - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Searching for a product and adding it to shopping cart
+----------------------------------------------------------------------------
+18:04:47.458 [Test worker] INFO   - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Searching for a term
+----------------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Oct 18, 2020 6:03:56 PM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
+WARNING: Loading deprecated ObjectFactory from runtime via reflection: cucumber.runtime.SerenityObjectFactory
+]]></system-err>
 </testsuite>
